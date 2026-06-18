@@ -1,8 +1,9 @@
-# jetson_
+# jetson
 
 ## Build llama.cpp
 
-```cd ~
+```
+cd ~
 git clone https://github.com/ggml-org/llama.cpp.git
 cd llama.cpp
 cmake -B build \
@@ -15,7 +16,8 @@ cmake --build build --config Release -j4
 
 ## Download the model and vision projector
 
-```mkdir -p ~/models && cd ~/models
+```
+mkdir -p ~/models && cd ~/models
 
 wget -O gemma-4-E2B-it-Q4_K_M.gguf https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF/resolve/main/gemma-4-E2B-it-Q4_K_M.gguf
 
