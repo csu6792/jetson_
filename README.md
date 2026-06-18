@@ -23,7 +23,8 @@ wget -O mmproj-gemma4-e2b-f16.gguf https://huggingface.co/ggml-org/gemma-4-E2B-i
 ```
 
 ## Start the server
-```CC=/usr/bin/gcc CXX=/usr/bin/g++ cmake -B build \
+```
+CC=/usr/bin/gcc CXX=/usr/bin/g++ cmake -B build \
   -DGGML_CUDA=ON \
   -DCMAKE_CUDA_ARCHITECTURES="87" \
   -DGGML_NATIVE=ON \
